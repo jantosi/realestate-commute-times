@@ -1,0 +1,42 @@
+{
+  "description": "An extension enriching RealEstate.com.au rent search results with commute times",
+  "manifest_version": 2,
+  "name": "RealEstate.com.au Commute Times",
+  "version": "1.0",
+  "homepage_url": "https://github.com/jantosi/realestate-commute-times/tree/master/",
+  "icons": {
+    "48": "icons/round_commute_black_18dp.png"
+  },
+
+  "web_accessible_resources": [
+    "icons/round_commute_black_18dp.png",
+    "icons/round_timeline_black_18dp.png"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.realestate.com.au/*"],
+      "js": ["realestate-commute-times.js"]
+    }
+  ],
+
+  "permissions": [
+    "storage",
+    "*://*.realestate.com.au/*",
+    "https://maps.googleapis.com/maps/api/*"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "realestate-commute-times@example.com.xpi",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "realestate-commute-times@example.com.xpi"
+    }
+  }
+
+}
