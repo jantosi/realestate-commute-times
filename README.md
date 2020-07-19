@@ -21,7 +21,7 @@ in the source code (`realestate-commute-times.js`).
 
 ### Installation
 
-See [Temporary_Installation_in_Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Temporary_Installation_in_Firefox]).
+See [Temporary_Installation_in_Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Temporary_Installation_in_Firefox).
 
 ## License
 
